@@ -2,6 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/styles.css">
     <title>Search App</title>
 </head>
 <body>
@@ -9,13 +14,27 @@
         <h1 class="offscreen">Search Me - A Wikipedia Powered Search Engine</h1>
         <section class="searchEntry">
             <h2 class="offscreen">Search Term Entry</h2>
-            <div class="logo" aria-hidden="true">SearchMe</div>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+            </div>
 
             <form action="" id="searchBar" class="searchBar">
                 <label class="offscreen" for="search">Enter a search term or phrase</label>
                 <input type="text" id="search" autocomplete="off">
-                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">X</div>
-                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">Search</button>
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
             </form>
         </section>
 
